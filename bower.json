@@ -1,0 +1,8 @@
+{
+    "version": "0.1.0",
+    "dependencies": {
+        "highlightjs": "~8.0.0",
+        "veams-sass": "~2.0.3"
+    },
+    "name": "docs"
+}

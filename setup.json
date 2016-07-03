@@ -1,0 +1,39 @@
+{
+  "generator-veams": {
+    "projectName": "docs",
+    "projectAuthor": "Henri Podolski",
+    "taskRunner": [
+      "grunt"
+    ],
+    "templateEngine": "mangony",
+    "mangonyExpress": true,
+    "installExtendedLayout": false,
+    "installPlugin": false,
+    "gulpModules": [],
+    "gruntModules": [
+      "grunt-autoprefixer",
+      "grunt-browser-sync",
+      "grunt-browserify",
+      "grunt-combine-mq",
+      "grunt-contrib-uglify",
+      "grunt-dr-svg-sprites",
+      "grunt-version"
+    ],
+    "features": [
+      "createDevFolder"
+    ],
+    "jsLibs": [],
+    "cssLibs": [
+      "lost-grid"
+    ],
+    "testAndQA": false,
+    "testAndQALibs": [],
+    "veamsPackages": [
+      "veamsMethodology",
+      "veamsSCSS"
+    ],
+    "docs": [
+      "htmldoc"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+
+/* ===================================================
+VEAMS SETTINGS
+=================================================== */
+$min-width: false; // This variable will be used in veams-sass
+
+// Demo Variables
+$bp-tablet-l: 1024px;
+$bp-tablet-p: 768px;
+$bp-mobile-l: 657px;
+$bp-mobile-p: 480px;
+
+
+
+
+/* ===================================================
+LOST SETTINGS
+=================================================== */
+@lost flexbox flex;
+@lost gutter 30px;
+
+$max-width: 1440px;
+
+body {
+	lost-utility: edit;
+}
