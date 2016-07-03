@@ -1,0 +1,12 @@
+[submodule "resources/templating/docsource/complay"]
+	path = resources/templating/docsource/complay
+	url = git@github.com:HenriPodolski/complay.git
+[submodule "resources/templating/docsource/extensions"]
+	path = resources/templating/docsource/extensions
+	url = git@github.com:complayjs/extensions.git
+[submodule "resources/templating/docsource/helpers"]
+	path = resources/templating/docsource/helpers
+	url = git@github.com:complayjs/helpers.git
+[submodule "resources/templating/docsource/generics"]
+	path = resources/templating/docsource/generics
+	url = git@github.com:complayjs/generics.git
