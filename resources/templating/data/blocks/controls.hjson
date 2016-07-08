@@ -1,0 +1,25 @@
+{
+  title: Controls
+  filters: {
+    intros: {
+      title: Introduction
+      name: intro
+    }
+    usage: {
+      title: Use Cases
+      name: usage
+    }
+    examples: {
+      title: Examples
+      name: examples
+    }
+    api: {
+      title: API
+      name: api
+    }
+    hints: {
+      title: Tips and Tricks
+      name: hints
+    }
+  }
+}

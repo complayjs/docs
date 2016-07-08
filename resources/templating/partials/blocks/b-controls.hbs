@@ -1,0 +1,10 @@
+<div class="b-controls--default" data-js-component="Controls" data-css="b-controls">
+    <p class="controls__headline">{{controls.title}}</p>
+
+    {{#each controls.filters}}
+        {{> c-checkbox
+            dataJsInputItem=name
+            id=(uid)
+        }}
+    {{/each}}
+</div>

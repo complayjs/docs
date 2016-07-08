@@ -11,31 +11,34 @@ Main File For Imports
 @import "../bower-components/veams-sass/resources/scss/veams-reset";
 
 // Global Variables and Settings
-@import "global/_vars";
+@import "global/vars";
 @import "../bower-components/veams-sass/resources/scss/veams";
-  
+
+@import "variables/_colors";
+@import "variables/_fonts";
 
 // Icons
 
 
 // Mixins
-
+@import "utils/mixins/rem";
 
 // Extends
 
 
 // Globals
-@import "global/_base";
+@import "global/base";
 
 
 // Regions in Layouts
 
 
 // Components
-
+@import "components/_c-checkbox";
 
 // Blocks
-
+@import "blocks/_b-backgroundart";
+@import "blocks/_b-header";
 
 // Print
 @import "global/_print";

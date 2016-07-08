@@ -7,9 +7,10 @@ Main File For Imports
 @import "../bower-components/veams-sass/resources/scss/veams-reset";
 
 // Global Variables and Settings
-@import "global/_vars";
+@import "global/vars";
 @import "../bower-components/veams-sass/resources/scss/veams";
-  
+
+@import "variables/**/*";
 
 // Icons
 @import "icons/**/*";
@@ -21,7 +22,7 @@ Main File For Imports
 @import "utils/extends/**/*";
 
 // Globals
-@import "global/_base";
+@import "global/base";
 
 
 // Regions in Layouts

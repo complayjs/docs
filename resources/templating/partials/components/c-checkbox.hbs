@@ -1,0 +1,15 @@
+<div class="c-checkbox--{{#if componentName}}{{componentName}}{{else}}default{{/if}}"
+    data-css="c-checkbox"
+    {{#if dataJsCheckGroupItem}}data-js-item="{{dataJsCheckGroupItem}}"{{/if}}>
+    <input type="checkbox"
+            class="checkbox__input"
+            name="{{name}}"
+            id="{{id}}"
+            {{#if checked}}checked{{/if}}
+            {{#if dataJsInputItem}}data-js-item="{{dataJsInputItem}}"{{/if}}/>
+    <label for="{{id}}"
+            class="checkbox__label"
+            {{#if dataJsLabelItem}}data-js-item="{{dataJsLabelItem}}"{{/if}}>
+        {{title}}
+    </label>
+</div>

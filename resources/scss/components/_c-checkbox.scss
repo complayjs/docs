@@ -1,0 +1,31 @@
+[data-css="c-checkbox"] {
+  .checkbox__input {
+    display:none;
+
+    &:checked + .checkbox__label {
+      &::before {
+        background:url("../img/png/check_radio_sheet.png") -19px top no-repeat;
+      }
+    }
+  }
+
+  .checkbox__label {
+    color: $font-color-bright;
+    @include rem(font-size, $font-size-m);
+
+    &::before {
+      content: "";
+      display:inline-block;
+      width:19px;
+      height:19px;
+      margin:-1px 4px 0 0;
+      vertical-align:middle;
+      background:url("../img/png/check_radio_sheet.png") left top no-repeat;
+      cursor:pointer;
+    }
+
+    &.is-dark {
+      color: $font-color-dark;
+    }
+  }
+}
