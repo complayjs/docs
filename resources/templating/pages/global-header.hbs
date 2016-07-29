@@ -4,8 +4,13 @@ title: Complay
 {{#extend "lyt-default"}}
 {{#content "main"}}
     {{> b-navigation}}
-    {{> b-controls}}
+    {{#withHash isDark=true}}
+        {{> b-controls}}
+    {{/withHash}}
     {{> b-anchornavigation}}
     {{> b-header}}
+
+
+    <div class="js-test"></div>
 {{/content}}
 {{/extend}}

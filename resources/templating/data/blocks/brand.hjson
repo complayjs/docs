@@ -1,8 +1,9 @@
 {
-  wordmark: Complay
+  wordmark: complay.js
   figurativemark: {
     sourceimage: img/brand/complay.svg
-    altText: Complay Logo
+    altText: complay Logo
   }
-  headline: Complay JavaScript library - compose, comply and play!
+  headline: Stack composing JavaScript library
+  slogan: comply, play - complay!
 }

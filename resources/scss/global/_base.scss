@@ -11,8 +11,23 @@ html {
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	@include rem(font-size, 16px);
 	line-height: 1.4;
 	height: 100%;
+
+	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
+	font-smooth: always;
+
+	font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+	-webkit-font-smoothing: subpixel-antialiased;
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		-webkit-font-smoothing: antialiased;
+	}
+
 }

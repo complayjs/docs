@@ -5,6 +5,8 @@ Main File For Imports
    v2.0 | 20110126
    License: none (public domain)
 */
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,500i';
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -59,9 +61,6 @@ VEAMS SETTINGS
 /* ===================================================
 LOST SETTINGS
 =================================================== */
-body *:not(input):not(textarea):not(select) {
-  background-color: rgba(0, 0, 255, 0.1); }
-
 /* ===================================================
 CENTERING MIXIN
 =================================================== */
@@ -135,7 +134,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* 3 */
   /* 3 */
   /* 4 */
@@ -147,7 +146,16 @@ body {
   font-size: 1.6rem;
   /* 9 */
   line-height: 1.4;
-  height: 100%; }
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      -webkit-font-smoothing: antialiased; } }
 
 [data-css="c-checkbox"] .checkbox__input {
   display: none; }
@@ -183,17 +191,76 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: -1; }
   [data-css="b-backgroundart"] .backgroundart__stage {
     width: 100%;
     height: 100%; }
+
+[data-css="b-branding"] {
+  padding: 24px; }
+  [data-css="b-branding"] .branding__link {
+    text-decoration: none; }
+  [data-css="b-branding"] .branding__wordmark {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    font-size: 50px;
+    /* 9 */
+    font-size: 5rem;
+    /* 9 */
+    color: #f2f2f2; }
+  [data-css="b-branding"] .branding__headline {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    font-size: 30px;
+    /* 9 */
+    font-size: 3rem;
+    /* 9 */
+    text-rendering: auto;
+    color: #f2f2f2; }
+  [data-css="b-branding"] .branding__slogan {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    /* 3 */
+    /* 3 */
+    /* 4 */
+    /* 6 */
+    /* 6 */
+    /* 7 */
+    font-size: 20px;
+    /* 9 */
+    font-size: 2rem;
+    /* 9 */
+    text-rendering: auto;
+    color: #f2f2f2; }
+
+[data-css="b-controls"] {
+  position: fixed;
+  left: 20px;
+  color: #f2f2f2; }
+  [data-css="b-controls"].is-dark {
+    color: #2B3228; }
 
 [data-css="b-header"] {
   position: relative;
   display: -ms-flexbox;
   display: flex;
   min-height: 300px;
-  height: 100%; }
+  height: 100%;
+  background-color: #0E2F44; }
   [data-css="b-header"] .header__stage {
     position: absolute;
     overflow: hidden;

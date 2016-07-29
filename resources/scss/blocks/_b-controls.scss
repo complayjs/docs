@@ -1,0 +1,13 @@
+[data-css="b-controls"] {
+  position: fixed;
+  left: 20px;
+  color: $font-color-bright;
+
+  &.is-dark {
+    color: $font-color-dark;
+  }
+
+  .controls__headline {
+
+  }
+}
